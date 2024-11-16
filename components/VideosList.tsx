@@ -15,7 +15,6 @@ import {
 } from '@gorhom/bottom-sheet';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFocusEffect } from 'expo-router';
-import { authenticateAsync } from 'expo-local-authentication';
 import daysBetween from '@/utils/daysBetween';
 import * as Linking from 'expo-linking';
 import supabase from '@/storage/supabase';
@@ -142,14 +141,6 @@ function VideosList() {
   }, []);
 
   async function deleteVideo(name: string) {
-    const res = await authenticateAsync();
-
-    if (!res.success) {
-      ToastAndroid.show('Incorrect Biometrics', ToastAndroid.SHORT);
-      Vibration.vibrate(100);
-      return;
-    }
-
     const newArr = videos.filter((video: any) => video.name !== name);
     zustandStorage.setItem('evidenceObjects', JSON.stringify(newArr));
     setVideos(newArr);

@@ -1,9 +1,10 @@
 import { CONSTANTS } from '@/utils/CONSTANTS';
 import * as Location from 'expo-location';
 
-async function checkSpeed(distance: number) {
-  let location = await Location.getCurrentPositionAsync({});
+async function checkSpeed(distanceInMeters: number) {
+  const distanceInKm = distanceInMeters / 1000;
 
+  let location = await Location.getCurrentPositionAsync({});
   const vehicleSpeed = CONSTANTS.VEHICLE_SPEED;
   const walkingSpeed = CONSTANTS.WALKING_SPEED;
 
@@ -14,11 +15,12 @@ async function checkSpeed(distance: number) {
   const walkingSpeedKmMin = walkingSpeed / 60;
   const currentSpeedKmMin = currentSpeedKmHr / 60;
 
-  const timeByVehicle = (distance / vehicleSpeedKmMin).toFixed(2);
-  const timeByWalking = (distance / walkingSpeedKmMin).toFixed(2);
-
+  const timeByVehicle = (distanceInKm / vehicleSpeedKmMin).toFixed(2);
+  const timeByWalking = (distanceInKm / walkingSpeedKmMin).toFixed(2);
   const timeByCurrentSpeed =
-    currentSpeedKmMin > 0 ? (distance / currentSpeedKmMin).toFixed(2) : '0.00';
+    currentSpeedKmMin > 0
+      ? (distanceInKm / currentSpeedKmMin).toFixed(2)
+      : '0.00';
 
   return {
     vehicle: timeByVehicle,

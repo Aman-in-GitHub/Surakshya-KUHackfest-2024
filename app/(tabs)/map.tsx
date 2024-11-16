@@ -148,8 +148,6 @@ function Map() {
         title: 'Danger Zone',
         body: 'Your selected location is in the danger zone'
       });
-
-      return;
     } else if (
       isInDangerZone(
         [coords[0], coords[1]],

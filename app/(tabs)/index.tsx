@@ -1,4 +1,5 @@
 import {
+  Alert,
   KeyboardAvoidingView,
   Platform,
   Pressable,
@@ -41,6 +42,8 @@ import RNRestart from 'react-native-restart';
 import { CONSTANTS } from '@/utils/CONSTANTS';
 import isInDangerZone from '@/utils/isInDangerZone';
 import checkReportData from '@/utils/checkReportData';
+import useBLE from '@/utils/useBLE';
+import { Device } from 'react-native-ble-plx';
 
 const AnimatedView = Animated.createAnimatedComponent(View);
 
@@ -78,6 +81,38 @@ function Index() {
     zustandStorage.getItem('isSOSActive') || 'false'
   );
   const contacts = CONSTANTS.CONTACTS;
+
+  const {
+    requestPermissions,
+    scanForPeripherals,
+    connectToDevice,
+    disconnectFromDevice,
+    sendMessage,
+    allDevices,
+    connectedDevice
+  } = useBLE();
+
+  useEffect(() => {
+    requestPermissions((granted) => {
+      if (granted) {
+        scanForPeripherals();
+      } else {
+        Alert.alert('Permissions Denied', 'Bluetooth permissions are required');
+      }
+    });
+  }, []);
+
+  async function handleConnect(device: Device) {
+    await connectToDevice(device);
+  }
+
+  async function handleSendMessage() {
+    if (connectedDevice) {
+      await sendMessage(connectedDevice, 'Help Me');
+    } else {
+      console.log('No device connected');
+    }
+  }
 
   async function getReports() {
     try {
@@ -324,7 +359,7 @@ function Index() {
       } else {
         await sendHelpSms();
       }
-    }, 30000);
+    }, 20000);
   }
 
   function stopTimer() {
@@ -424,7 +459,10 @@ function Index() {
   async function sendHelpSms() {
     for (let i = 0; i < contacts.length; i++) {
       const contact = contacts[i];
-      const response = await sendSms(contact, 'Help! I am stuck');
+      const response = await sendSms(
+        contact,
+        `Help! I am in an emergency situation. Call me immediately. My current location is https://google.com/maps/search/?api=1&query=${locationRef?.current?.latitude},${locationRef?.current?.longitude}`
+      );
       console.log(response, contact, 'HELP');
       await new Promise((resolve) => setTimeout(resolve, 2000));
     }
@@ -433,7 +471,10 @@ function Index() {
   async function sendOkSms() {
     for (let i = 0; i < contacts.length; i++) {
       const contact = contacts[i];
-      const response = await sendSms(contact, 'I am! OK');
+      const response = await sendSms(
+        contact,
+        `I am safe now you can be relieved. Call me if you can to make sure I'm Okay. My latest location is https://google.com/maps/search/?api=1&query=${locationRef?.current?.latitude},${locationRef?.current?.longitude}`
+      );
       console.log(response, contact, 'OK');
       await new Promise((resolve) => setTimeout(resolve, 2000));
     }

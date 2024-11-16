@@ -142,7 +142,7 @@ function MapDirections({ isNavigation, setIsNavigation, navigateTo }: any) {
                     />
                     <Text isBlack={true}>
                       {totalDistance > 0
-                        ? totalDistance + ' km'
+                        ? (totalDistance / 1000).toFixed(2) + ' km'
                         : 'Calculating'}
                     </Text>
                   </View>

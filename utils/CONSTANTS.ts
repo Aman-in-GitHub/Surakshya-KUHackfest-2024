@@ -1,6 +1,6 @@
 const MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
 const CENTER_COORDINATES = [85.53875944752549, 27.619366021227222];
-const TIMER_INTERVAL = 10;
+const TIMER_INTERVAL = 7;
 const WALKING_SPEED = 5;
 const VEHICLE_SPEED = 40;
 const HOME_COORDS = [85.57, 27.619];
@@ -12,7 +12,7 @@ const WARNING_ZONES = [
 ];
 const DANGER_ZONE_RANGE = 1.5;
 const WARNING_ZONE_RANGE = 0.8;
-const CONTACTS = ['1234567890', '0000999999', '2384940304'];
+const CONTACTS = ['9844676258'];
 
 export const CONSTANTS = {
   MAP_STYLE_URL,

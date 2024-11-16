@@ -1,14 +1,15 @@
-import { ToastAndroid, Vibration, View } from 'react-native';
-import React, { useCallback, useState } from 'react';
+import { Pressable, ToastAndroid, Vibration, View } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
 import Animated, { FadeIn } from 'react-native-reanimated';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
 import Text from '@/components/Text';
-import { authenticateAsync } from 'expo-local-authentication';
-import { useFocusEffect, useRouter } from 'expo-router';
-import ActivityIndicator from '@/components/ActivityIndicator';
-import isOnline from '@/utils/isOnline';
+import { Stack, useRouter } from 'expo-router';
 import NoConnection from '@/assets/images/no-connection.svg';
 import VideosList from '@/components/VideosList';
+import zustandStorage from '@/storage/storage';
+import { OtpInput, OtpInputRef } from 'react-native-otp-entry';
+import { LinearGradient } from 'expo-linear-gradient';
+import isOnline from '@/utils/isOnline';
 
 const AnimatedView = Animated.createAnimatedComponent(View);
 
@@ -17,26 +18,37 @@ function Videos() {
   const [unlocked, setUnlocked] = useState(false);
   const [online, setOnline] = useState(false);
   const router = useRouter();
+  const [pinValue, setPinValue] = useState('');
+  const userPin = zustandStorage.getItem('userPin') || '0227';
+  const pinRef = useRef<OtpInputRef>(null);
 
-  useFocusEffect(
-    useCallback(() => {
-      async function authenticateUser() {
-        const isConnected = await isOnline();
-        setOnline(isConnected as boolean);
+  useEffect(() => {
+    async function checkIsConnected() {
+      const isConnected = await isOnline();
+      setOnline(isConnected as boolean);
+    }
+    checkIsConnected();
+  }, []);
 
-        const res = await authenticateAsync();
-        if (res.success) {
-          setUnlocked(true);
-        } else {
-          router.back();
-          ToastAndroid.show('Incorrect Biometrics', ToastAndroid.SHORT);
-          Vibration.vibrate(100);
-        }
-      }
+  async function verifyOtp() {
+    const pin = pinValue.trim();
 
-      authenticateUser();
-    }, [router])
-  );
+    if (pin.length !== 4 || pin !== userPin) {
+      Vibration.vibrate(100);
+      // @ts-expect-error ERROR: ref type error
+      pinRef.current.clear();
+      setPinValue('');
+      router.back();
+      ToastAndroid.show('Incorrect PIN', ToastAndroid.SHORT);
+      return;
+    }
+
+    Vibration.vibrate(500);
+    // @ts-expect-error ERROR: ref type error
+    pinRef.current.clear();
+    setPinValue('');
+    setUnlocked(true);
+  }
 
   if (!unlocked) {
     return (
@@ -44,9 +56,8 @@ function Videos() {
         style={{
           flex: 1,
           backgroundColor: theme.colors.background,
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginBottom: 100
+          justifyContent: 'flex-end',
+          alignItems: 'center'
         }}
       >
         <AnimatedView
@@ -58,7 +69,59 @@ function Videos() {
             alignItems: 'center'
           }}
         >
-          <ActivityIndicator size={200} delayMs={100} />
+          <View style={styles.otpView}>
+            <OtpInput
+              numberOfDigits={4}
+              onTextChange={setPinValue}
+              ref={pinRef}
+              focusColor={theme.colors.blue}
+              secureTextEntry={true}
+              theme={{
+                containerStyle: styles.otpContainer,
+                pinCodeContainerStyle: {
+                  width: 60,
+                  borderRadius: theme.borderRadius.default,
+                  borderColor: theme.colors.blue
+                },
+                pinCodeTextStyle: {
+                  color: theme.colors.blue
+                }
+              }}
+              autoFocus={false}
+            />
+
+            <LinearGradient
+              colors={[theme.colors.blue, 'blue']}
+              style={{
+                borderRadius: theme.borderRadius.default
+              }}
+            >
+              <Pressable
+                style={{
+                  paddingVertical: theme.padding.verticalButton,
+                  paddingHorizontal: theme.padding.horizontalButton,
+                  borderRadius: theme.borderRadius.default,
+                  alignItems: 'center',
+                  flexDirection: 'row',
+                  justifyContent: 'center',
+                  gap: 10
+                }}
+                android_ripple={{
+                  color: theme.colors.androidRipple
+                }}
+                onPress={verifyOtp}
+              >
+                <Text
+                  style={{
+                    fontSize: theme.fontSize.lg,
+                    fontFamily: 'BoldBodyTextFont'
+                  }}
+                >
+                  Unlock Evidences
+                </Text>
+              </Pressable>
+            </LinearGradient>
+          </View>
         </AnimatedView>
       </View>
     );
@@ -117,6 +180,15 @@ function Videos() {
 const stylesheet = createStyleSheet((theme) => ({
   container: {
     flex: 1
+  },
+  otpView: {
+    flexDirection: 'column',
+    gap: 25
+  },
+  otpContainer: {
+    width: '80%',
+    gap: 25,
+    flexDirection: 'row'
   }
 }));
 

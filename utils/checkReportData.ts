@@ -63,8 +63,6 @@ async function checkReportData(data: any[]) {
       totalScore += 3;
     }
 
-    console.log(totalScore);
-
     if (totalScore > 5 && totalScore < 7) {
       console.log('Warning Location');
     } else if (totalScore >= 8) {
