@@ -1,0 +1,766 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-11-15T19:55:26Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/163599016",
+        "amenity": "hospital",
+        "name": "Human Rehabilitation and Development Centre"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5105165, 27.6289686],
+            [85.5100429, 27.6288257],
+            [85.5100774, 27.628401],
+            [85.5100013, 27.6282429],
+            [85.510025, 27.6281159],
+            [85.5103341, 27.6280728],
+            [85.5104723, 27.6280491],
+            [85.5105393, 27.6280502],
+            [85.5106086, 27.6280618],
+            [85.5108828, 27.6282977],
+            [85.5113353, 27.6283154],
+            [85.5115292, 27.6285191],
+            [85.5115984, 27.6287409],
+            [85.5116643, 27.6290281],
+            [85.5115108, 27.6291636],
+            [85.5114312, 27.6292063],
+            [85.5113135, 27.6292109],
+            [85.511085, 27.6290219],
+            [85.510793, 27.6290783],
+            [85.5106458, 27.628969],
+            [85.5105165, 27.6289686]
+          ]
+        ]
+      },
+      "id": "way/163599016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/186777941",
+        "amenity": "hospital",
+        "barrier": "fence",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "Khopasi Health Post",
+        "surface": "grass"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5354556, 27.5650429],
+            [85.5357304, 27.5644465],
+            [85.5359411, 27.5639842],
+            [85.5359919, 27.5639517],
+            [85.5360739, 27.5639193],
+            [85.5366773, 27.5638911],
+            [85.5368715, 27.5639995],
+            [85.5370488, 27.5641731],
+            [85.5370566, 27.5641929],
+            [85.5370512, 27.5642091],
+            [85.5366933, 27.564522],
+            [85.5363735, 27.5647571],
+            [85.5362694, 27.5648013],
+            [85.536126, 27.5648428],
+            [85.5354556, 27.5650429]
+          ]
+        ]
+      },
+      "id": "way/186777941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/194899597",
+        "amenity": "hospital",
+        "building": "hospital",
+        "layer": "1",
+        "name": "Spinal Injury Rahabilitation Center"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.4918552, 27.637713],
+            [85.4918537, 27.6376212],
+            [85.4917582, 27.6376224],
+            [85.4917567, 27.6375352],
+            [85.49173, 27.6375355],
+            [85.491728, 27.6374138],
+            [85.4917784, 27.6374131],
+            [85.4917764, 27.637293],
+            [85.4918538, 27.637292],
+            [85.4918542, 27.6373161],
+            [85.4919091, 27.6373154],
+            [85.4919077, 27.6372355],
+            [85.4921683, 27.6372321],
+            [85.4921698, 27.6373225],
+            [85.492203, 27.6373221],
+            [85.4922022, 27.637273],
+            [85.4922214, 27.6372728],
+            [85.4922209, 27.6372441],
+            [85.4921969, 27.6372444],
+            [85.4921949, 27.6372047],
+            [85.4921957, 27.6371741],
+            [85.4922913, 27.6371728],
+            [85.4922908, 27.6372041],
+            [85.4922925, 27.6372432],
+            [85.4922641, 27.6372435],
+            [85.4922646, 27.6372722],
+            [85.4922755, 27.6372721],
+            [85.4922752, 27.6372514],
+            [85.4924266, 27.6372495],
+            [85.4924291, 27.6373946],
+            [85.4923923, 27.6373951],
+            [85.4923951, 27.6375595],
+            [85.4923242, 27.6375604],
+            [85.4923252, 27.6376148],
+            [85.4922531, 27.6376158],
+            [85.4922539, 27.6376629],
+            [85.4922299, 27.6376632],
+            [85.4922316, 27.6377634],
+            [85.4921137, 27.6377649],
+            [85.4921141, 27.6377913],
+            [85.491999, 27.6377928],
+            [85.4919977, 27.6377111],
+            [85.4918552, 27.637713]
+          ]
+        ]
+      },
+      "id": "way/194899597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/230055223",
+        "amenity": "hospital",
+        "check_date": "2023-10-23",
+        "emergency": "yes",
+        "internet_access": "wlan",
+        "name": "Dhulikhel Hospital",
+        "name:ne": "धुलिखेल हस्पिटल",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5473223, 27.6168605],
+            [85.5472281, 27.6167165],
+            [85.5479951, 27.6163375],
+            [85.5482293, 27.616649],
+            [85.5481729, 27.6166704],
+            [85.5483017, 27.6168617],
+            [85.5484211, 27.6170423],
+            [85.5482527, 27.6171243],
+            [85.5481341, 27.6171207],
+            [85.5479919, 27.6171065],
+            [85.5478726, 27.6170875],
+            [85.5476741, 27.6170554],
+            [85.5475534, 27.6170269],
+            [85.5473985, 27.6169775],
+            [85.5473223, 27.6168605]
+          ]
+        ]
+      },
+      "id": "way/230055223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/230055228",
+        "amenity": "hospital",
+        "building": "yes",
+        "check_date": "2023-10-23",
+        "emergency": "yes",
+        "name": "Pediatrics and Gyn/Obs",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5475468, 27.6164062],
+            [85.5474744, 27.6163587],
+            [85.5475093, 27.6163135],
+            [85.5474851, 27.6163064],
+            [85.5475464, 27.6162402],
+            [85.5475277, 27.6162188],
+            [85.5476112, 27.6161329],
+            [85.5476618, 27.6161095],
+            [85.5477845, 27.616096],
+            [85.5478085, 27.6161276],
+            [85.5479809, 27.6161428],
+            [85.5479661, 27.6162346],
+            [85.5477856, 27.6162351],
+            [85.5476649, 27.6162755],
+            [85.5475468, 27.6164062]
+          ]
+        ]
+      },
+      "id": "way/230055228"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/331285273",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "DCWC Community Hospital"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.8460802, 27.5997323],
+            [85.8461349, 27.5998286],
+            [85.8458897, 27.5999381],
+            [85.8458349, 27.5998418],
+            [85.8460802, 27.5997323]
+          ]
+        ]
+      },
+      "id": "way/331285273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/341520936",
+        "amenity": "hospital",
+        "name": "Cancer Hospital"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5271112, 27.6338387],
+            [85.526996, 27.6336443],
+            [85.527103, 27.6335946],
+            [85.5272182, 27.633789],
+            [85.5271112, 27.6338387]
+          ]
+        ]
+      },
+      "id": "way/341520936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/343014692",
+        "amenity": "hospital",
+        "name": "Rescue Camp"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5829493, 27.6662795],
+            [85.5829534, 27.6662296],
+            [85.5830151, 27.6662023],
+            [85.5830405, 27.6662332],
+            [85.5829493, 27.6662795]
+          ]
+        ]
+      },
+      "id": "way/343014692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/343014698",
+        "amenity": "hospital",
+        "name": "Rescue Tent"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5743581, 27.678956],
+            [85.574386, 27.6789232],
+            [85.5744268, 27.6789504],
+            [85.5743989, 27.6789832],
+            [85.5743581, 27.678956]
+          ]
+        ]
+      },
+      "id": "way/343014698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/343949381",
+        "amenity": "hospital",
+        "name": "health post"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5005899, 27.5782836],
+            [85.50062, 27.5782384],
+            [85.5006904, 27.5782752],
+            [85.5006602, 27.5783204],
+            [85.5005899, 27.5782836]
+          ]
+        ]
+      },
+      "id": "way/343949381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/344541501",
+        "amenity": "hospital",
+        "building": "yes",
+        "name": "Banepa Hospital",
+        "roof:material": "concrete",
+        "roof:shape": "mixed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5184166, 27.632894],
+            [85.518428, 27.6328251],
+            [85.5184406, 27.6328268],
+            [85.5184572, 27.6327268],
+            [85.5185727, 27.6327418],
+            [85.5185436, 27.6329104],
+            [85.5184166, 27.632894]
+          ]
+        ]
+      },
+      "id": "way/344541501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/429577147",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Sheer Memorial Adventist Hospital",
+        "operator": "SDA",
+        "wikidata": "Q7431075"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5280069, 27.6340718],
+            [85.5279041, 27.6341187],
+            [85.5278081, 27.6340874],
+            [85.5277176, 27.6340768],
+            [85.5275623, 27.6340725],
+            [85.5272686, 27.6335474],
+            [85.5272394, 27.633522],
+            [85.5269695, 27.6333584],
+            [85.5269777, 27.632951],
+            [85.5269533, 27.6328188],
+            [85.5271332, 27.6326483],
+            [85.5271945, 27.6325133],
+            [85.5272721, 27.6323926],
+            [85.5272538, 27.6322719],
+            [85.5272671, 27.6322088],
+            [85.5272317, 27.6319588],
+            [85.5271957, 27.6318726],
+            [85.5273303, 27.6318412],
+            [85.527518, 27.6318875],
+            [85.5276455, 27.6318602],
+            [85.5277487, 27.6319802],
+            [85.5278439, 27.632301],
+            [85.527978, 27.6325244],
+            [85.5278962, 27.6325873],
+            [85.528033, 27.632844],
+            [85.5280102, 27.6330697],
+            [85.5281068, 27.6333798],
+            [85.5280706, 27.6334963],
+            [85.5284058, 27.633785],
+            [85.5284513, 27.6338184],
+            [85.5284213, 27.6339148],
+            [85.5283576, 27.6338967],
+            [85.5282416, 27.6339466],
+            [85.5282101, 27.6339703],
+            [85.5281451, 27.6340343],
+            [85.5280721, 27.6341251],
+            [85.5280461, 27.6341213],
+            [85.528039, 27.634127],
+            [85.5280069, 27.6340718]
+          ]
+        ]
+      },
+      "id": "way/429577147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/902876924",
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.8596765, 27.598178],
+            [85.8596165, 27.5980377],
+            [85.8597462, 27.5979941],
+            [85.8597683, 27.5980457],
+            [85.8599105, 27.5979979],
+            [85.8599484, 27.5980866],
+            [85.8596765, 27.598178]
+          ]
+        ]
+      },
+      "id": "way/902876924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1016516688",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Methinkot Hospital"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.6470115, 27.5559101],
+            [85.6469869, 27.5558964],
+            [85.6470946, 27.5557995],
+            [85.6472056, 27.5557175],
+            [85.6473134, 27.5557653],
+            [85.6474551, 27.5558773],
+            [85.647546, 27.5559169],
+            [85.6475275, 27.5560153],
+            [85.6473612, 27.55616],
+            [85.6470115, 27.5559101]
+          ]
+        ]
+      },
+      "id": "way/1016516688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1042223286",
+        "amenity": "hospital",
+        "name": "midwife"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.7361343, 27.6301705],
+            [85.7361447, 27.6301428],
+            [85.7361849, 27.6301547],
+            [85.7362007, 27.6301128],
+            [85.7362871, 27.6301383],
+            [85.7362609, 27.6302079],
+            [85.7361343, 27.6301705]
+          ]
+        ]
+      },
+      "id": "way/1042223286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1097620098",
+        "amenity": "hospital",
+        "building:part": "roof",
+        "roof:material": "clay_tiles"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5218853, 27.6297964],
+            [85.5218268, 27.6297151],
+            [85.522022, 27.6296046],
+            [85.5220719, 27.6296781],
+            [85.522044, 27.6296941],
+            [85.5220587, 27.6297144],
+            [85.5220238, 27.6297342],
+            [85.5220107, 27.6297159],
+            [85.5219861, 27.6297298],
+            [85.521991, 27.6297366],
+            [85.5218853, 27.6297964]
+          ]
+        ]
+      },
+      "id": "way/1097620098"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1417852753",
+        "amenity": "hospital",
+        "name": "Red Cross",
+        "source": "Garmin Orgeon 450 GPS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5134905, 27.5840061]
+      },
+      "id": "node/1417852753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1767445004",
+        "amenity": "hospital",
+        "name": "Krishna Prasad Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5237477, 27.6296267]
+      },
+      "id": "node/1767445004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2153239616",
+        "amenity": "hospital",
+        "name": "Panauti Hospital",
+        "name:ne": "पनौती अस्पताल"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5169801, 27.5923956]
+      },
+      "id": "node/2153239616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4328996528",
+        "amenity": "hospital",
+        "designation": "kantipur hospital branch",
+        "emergency": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6208633, 27.6484976]
+      },
+      "id": "node/4328996528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4532457890",
+        "addr:street": "Budol M.",
+        "amenity": "hospital",
+        "email": "Remeh.bnp@gmail.com",
+        "name:en": "Reyukai Eye Hospital",
+        "phone": "011661580"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5353208, 27.6307063]
+      },
+      "id": "node/4532457890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524684260",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "hospital",
+        "name:en": "Bhairab Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5122054, 27.586462]
+      },
+      "id": "node/9524684260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9594268431",
+        "amenity": "hospital",
+        "name": "bhumlu rural municipal hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.7359073, 27.6323051]
+      },
+      "id": "node/9594268431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9784655242",
+        "amenity": "hospital",
+        "contact:phone": "11661236",
+        "name:en": "Nepal family planning association",
+        "source": "Field Survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5229136, 27.6312461]
+      },
+      "id": "node/9784655242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9784655253",
+        "amenity": "hospital",
+        "contact:phone": "11660781",
+        "name:en": "K.B Polyclinic Pvt.ltd",
+        "source": "Field Survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5219661, 27.6297685]
+      },
+      "id": "node/9784655253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9960940221",
+        "amenity": "hospital",
+        "name": "banepa dentel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5215853, 27.6306702]
+      },
+      "id": "node/9960940221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034942",
+        "addr:street": "Nala",
+        "amenity": "hospital",
+        "name": "Sadbhav Community Hospital",
+        "phone": "11411113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5113525, 27.6538611]
+      },
+      "id": "node/10230034942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034943",
+        "addr:street": "Bhaisipati",
+        "amenity": "hospital",
+        "name": "Spinal Injury Rehabilitation Center",
+        "phone": "11663058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.492346, 27.636392]
+      },
+      "id": "node/10230034943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034944",
+        "addr:street": "Pulbazar",
+        "amenity": "hospital",
+        "name": "Bhomi Hospital",
+        "name:ne": "भोमि हस्पिटल",
+        "phone": "11665413"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5090439, 27.6325128]
+      },
+      "id": "node/10230034944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034945",
+        "addr:street": "Chardobato",
+        "amenity": "hospital",
+        "name": "Krishna Prasad Hospital",
+        "phone": "11664332"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5246921, 27.6294156]
+      },
+      "id": "node/10230034945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034946",
+        "addr:street": "Teendobato",
+        "amenity": "hospital",
+        "name": "Merryland Heath Care",
+        "phone": "11665370"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5178761, 27.6311524]
+      },
+      "id": "node/10230034946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034947",
+        "addr:street": "दुच्छ टोल",
+        "amenity": "hospital",
+        "name:ne": "अभय उपचार केन्द्र",
+        "phone": "11662975"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5178883, 27.6337696]
+      },
+      "id": "node/10230034947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034948",
+        "addr:street": "Ghokechaur",
+        "amenity": "hospital",
+        "name": "Scheer Memorial Hospital",
+        "phone": "11661111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5273593, 27.63342]
+      },
+      "id": "node/10230034948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11949714809",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Seer Imaging and Diagnostic Center Banepa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5183654, 27.6324687]
+      },
+      "id": "node/11949714809"
+    }
+  ]
+}

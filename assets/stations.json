@@ -1,0 +1,614 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-11-15T19:05:21Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209175166",
+        "amenity": "police",
+        "name": "Dhulikhel Police Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5592431, 27.6153341],
+            [85.5588841, 27.6147121],
+            [85.5588519, 27.6146313],
+            [85.5588466, 27.6145267],
+            [85.5588787, 27.6144412],
+            [85.558923, 27.6144076],
+            [85.5590638, 27.614301],
+            [85.559324, 27.6141488],
+            [85.5596298, 27.6141275],
+            [85.559769, 27.6141654],
+            [85.5598363, 27.6143936],
+            [85.5599704, 27.6146836],
+            [85.5596217, 27.6148856],
+            [85.5594876, 27.6150044],
+            [85.559541, 27.6152111],
+            [85.5592431, 27.6153341]
+          ]
+        ]
+      },
+      "id": "way/209175166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/210573285",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Kushadevi Prahari Chowki"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.4819893, 27.5895878],
+            [85.4819861, 27.589504],
+            [85.4820592, 27.5895017],
+            [85.4820624, 27.5895855],
+            [85.4819893, 27.5895878]
+          ]
+        ]
+      },
+      "id": "way/210573285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/223848575",
+        "amenity": "police",
+        "building": "yes",
+        "name": "panauti police station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5171243, 27.5850818],
+            [85.5170162, 27.585077],
+            [85.5170186, 27.5850338],
+            [85.5170708, 27.5850361],
+            [85.5170715, 27.5850225],
+            [85.5171275, 27.585025],
+            [85.5171243, 27.5850818]
+          ]
+        ]
+      },
+      "id": "way/223848575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/343254364",
+        "amenity": "police",
+        "landuse": "residential",
+        "name": "asthai prahari post chandeswori"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5320851, 27.6354629],
+            [85.532528, 27.6356706],
+            [85.5323912, 27.6360688],
+            [85.5322049, 27.6362213],
+            [85.5319386, 27.6360918],
+            [85.5318308, 27.6360676],
+            [85.5317073, 27.6360399],
+            [85.5316719, 27.6360335],
+            [85.5313719, 27.6360197],
+            [85.5308769, 27.6360139],
+            [85.5304219, 27.6360037],
+            [85.5304238, 27.6358486],
+            [85.5307046, 27.6355166],
+            [85.5308972, 27.6355625],
+            [85.5310332, 27.6356587],
+            [85.5312612, 27.6358553],
+            [85.5314598, 27.6359043],
+            [85.5314956, 27.6358062],
+            [85.5315022, 27.6356822],
+            [85.5317497, 27.6356331],
+            [85.5317008, 27.6354167],
+            [85.5317138, 27.6353417],
+            [85.5316348, 27.6352603],
+            [85.5315184, 27.6350474],
+            [85.5315608, 27.6350186],
+            [85.5317301, 27.6351513],
+            [85.5318832, 27.6353215],
+            [85.5320493, 27.6354196],
+            [85.5320851, 27.6354629]
+          ]
+        ]
+      },
+      "id": "way/343254364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/951436517",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Panauti Police Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.5204003, 27.5858532],
+            [85.5203952, 27.5857409],
+            [85.5205766, 27.5857706],
+            [85.5205868, 27.585882],
+            [85.5204003, 27.5858532]
+          ]
+        ]
+      },
+      "id": "way/951436517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1017154692",
+        "amenity": "police",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.634561, 27.638932],
+            [85.6344719, 27.6387954],
+            [85.6345147, 27.6387734],
+            [85.6346039, 27.63891],
+            [85.634561, 27.638932]
+          ]
+        ]
+      },
+      "id": "way/1017154692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1041986694",
+        "amenity": "police",
+        "name": "dhadkhola police chauki"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.6031414, 27.7444887],
+            [85.6031382, 27.7444397],
+            [85.603231, 27.7444348],
+            [85.6032342, 27.7444839],
+            [85.6031414, 27.7444887]
+          ]
+        ]
+      },
+      "id": "way/1041986694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1756889925",
+        "amenity": "police",
+        "name": "Area Police Office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5178425, 27.6316217]
+      },
+      "id": "node/1756889925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2019327695",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4822047, 27.5896309]
+      },
+      "id": "node/2019327695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3298334363",
+        "amenity": "police",
+        "name": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4775798, 27.5241044]
+      },
+      "id": "node/3298334363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4143214789",
+        "addr:street": "Dhulikhel Sindhuli Bhittamod Highway",
+        "amenity": "police",
+        "name": "Mangaltar, Chhap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.7438403, 27.4754016]
+      },
+      "id": "node/4143214789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4415861991",
+        "amenity": "police",
+        "name": "Panauti police Bit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5134951, 27.5867756]
+      },
+      "id": "node/4415861991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4519069989",
+        "amenity": "police",
+        "name": "Sanga Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4799727, 27.6408847]
+      },
+      "id": "node/4519069989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4560399593",
+        "amenity": "police",
+        "name": "Banepa Traffic Police Office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5152371, 27.6317549]
+      },
+      "id": "node/4560399593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6147290985",
+        "amenity": "police",
+        "name": "Baghmati Zonal Police Headquarter",
+        "name:ne": "बागमती अञ्चल  प्रहरी कार्यालय",
+        "operator": "नेपाल प्रहरी",
+        "operator:en": "Nepal Police",
+        "operator:ne": "नेपाल प्रहरी",
+        "operator:wikidata": "Q12436070"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4974195, 27.6322224]
+      },
+      "id": "node/6147290985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523316227",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Khopasi Police station",
+        "source": "Field Survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5327563, 27.5682321]
+      },
+      "id": "node/9523316227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523779639",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Police Camp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5237044, 27.5953706]
+      },
+      "id": "node/9523779639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523779640",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Police Post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5177525, 27.5925429]
+      },
+      "id": "node/9523779640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523779665",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Panauti Police Camp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5202048, 27.5857131]
+      },
+      "id": "node/9523779665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524047008",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Kushadevi Police Post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4738, 27.5916]
+      },
+      "id": "node/9524047008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9526157429",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "police",
+        "name": "Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4748531, 27.5932548]
+      },
+      "id": "node/9526157429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9559902053",
+        "amenity": "police",
+        "name": "Prahari Chauki Shyampati",
+        "name:ne": "प्रहरी चौकी श्यामपाटी",
+        "opening_hours": "24/7",
+        "phone": "9882789000",
+        "source": "Namobuddha open mapping 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5865535, 27.5703664]
+      },
+      "id": "node/9559902053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9559902054",
+        "amenity": "police",
+        "name": "Namobuddha Police Bit",
+        "name:ne": "प्रहरी बिट",
+        "opening_hours": "24/7",
+        "phone": "9851285614",
+        "source": "Namobuddha open mapping 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5857244, 27.5724452]
+      },
+      "id": "node/9559902054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9559902055",
+        "amenity": "police",
+        "name": "Police Station Bhakundebeshi",
+        "name:ne": "प्रहरी चौकी भकुन्डेबेशी",
+        "opening_hours": "24/7",
+        "phone": "011490202",
+        "source": "Namobuddha open mapping 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6462096, 27.55431]
+      },
+      "id": "node/9559902055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9559902056",
+        "amenity": "police",
+        "name": "Police Station Timal",
+        "name:ne": "प्रहरी चौकी तिमल",
+        "opening_hours": "24/7",
+        "phone": "9863192651",
+        "source": "Namobuddha open mapping 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.7045651, 27.5536079]
+      },
+      "id": "node/9559902056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9960916642",
+        "amenity": "police",
+        "name": "police post banepa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5177202, 27.6315648]
+      },
+      "id": "node/9960916642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9960926868",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5197333, 27.6329954]
+      },
+      "id": "node/9960926868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9960926870",
+        "amenity": "police",
+        "name": "jilla trafic karyalaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5178349, 27.6315394]
+      },
+      "id": "node/9960926870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9960937892",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.531878, 27.6361059]
+      },
+      "id": "node/9960937892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034823",
+        "amenity": "police",
+        "name": "Police Station, Nala",
+        "phone": "011-490202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5108928, 27.6490218]
+      },
+      "id": "node/10230034823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034824",
+        "addr:street": "Aashapuri",
+        "amenity": "police",
+        "name": "Mahanagariya Asthayi Prahari Beat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4599085, 27.6185777]
+      },
+      "id": "node/10230034824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034826",
+        "addr:street": "Pulbazar",
+        "amenity": "police",
+        "name": "Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4970551, 27.6317759]
+      },
+      "id": "node/10230034826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034827",
+        "amenity": "police",
+        "name": "District Traffic Check Post",
+        "phone": "9851123804"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5153474, 27.6317667]
+      },
+      "id": "node/10230034827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034828",
+        "addr:street": "Pulbazar",
+        "amenity": "police",
+        "name": "Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5170737, 27.6318205]
+      },
+      "id": "node/10230034828"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10230034829",
+        "addr:street": "Nayabasti",
+        "amenity": "police",
+        "name": "Area Police Office",
+        "opening_hours": "24/7",
+        "phone": "11663085"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.5161284, 27.6368514]
+      },
+      "id": "node/10230034829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10704592443",
+        "addr:street": "tamaghat",
+        "amenity": "police",
+        "name": "Police beat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6203988, 27.6478108]
+      },
+      "id": "node/10704592443"
+    }
+  ]
+}

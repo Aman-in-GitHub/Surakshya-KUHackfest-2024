@@ -1,0 +1,9 @@
+{
+  "platforms": ["android"],
+  "ios": {
+    "modules": ["EmergencyContactModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.emergencycontactmodule.EmergencyContactModule"]
+  }
+}
