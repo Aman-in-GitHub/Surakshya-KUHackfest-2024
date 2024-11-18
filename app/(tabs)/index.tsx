@@ -26,7 +26,7 @@ import RNShake from 'react-native-shake';
 import { LinearGradient } from 'expo-linear-gradient';
 import AidFill from '@/assets/icons/AidFill.svg';
 import Danger from '@/assets/icons/Danger.svg';
-import { sendSms } from '@/modules/emergency-contact-module';
+import { sendSms, makePhoneCall } from '@/modules/emergency-contact-module';
 import usePermissions from '@/utils/useRequestPermissions';
 import Animated, { FadeIn } from 'react-native-reanimated';
 import checkForEvidences from '@/utils/checkForEvidences';
@@ -42,8 +42,6 @@ import RNRestart from 'react-native-restart';
 import { CONSTANTS } from '@/utils/CONSTANTS';
 import isInDangerZone from '@/utils/isInDangerZone';
 import checkReportData from '@/utils/checkReportData';
-import useBLE from '@/utils/useBLE';
-import { Device } from 'react-native-ble-plx';
 
 const AnimatedView = Animated.createAnimatedComponent(View);
 
@@ -81,38 +79,6 @@ function Index() {
     zustandStorage.getItem('isSOSActive') || 'false'
   );
   const contacts = CONSTANTS.CONTACTS;
-
-  const {
-    requestPermissions,
-    scanForPeripherals,
-    connectToDevice,
-    disconnectFromDevice,
-    sendMessage,
-    allDevices,
-    connectedDevice
-  } = useBLE();
-
-  useEffect(() => {
-    requestPermissions((granted) => {
-      if (granted) {
-        scanForPeripherals();
-      } else {
-        Alert.alert('Permissions Denied', 'Bluetooth permissions are required');
-      }
-    });
-  }, []);
-
-  async function handleConnect(device: Device) {
-    await connectToDevice(device);
-  }
-
-  async function handleSendMessage() {
-    if (connectedDevice) {
-      await sendMessage(connectedDevice, 'Help Me');
-    } else {
-      console.log('No device connected');
-    }
-  }
 
   async function getReports() {
     try {
@@ -315,6 +281,11 @@ function Index() {
 
   const handleShake = useCallback(() => {
     console.log('Shake detected');
+    sendSms(
+      '9868366334',
+      'Help! I am in an emergency situation. Call me immediately. My current location is https://google.com/maps/search/?api=1&query=28.6139,77.2090'
+    );
+    makePhoneCall('9868366334');
   }, []);
 
   useEffect(() => {
@@ -359,7 +330,25 @@ function Index() {
       } else {
         await sendHelpSms();
       }
-    }, 20000);
+    }, 30000);
+
+    smsIntervalRef.current = setInterval(async () => {
+      if (isSafeRef.current) {
+        clearInterval(smsIntervalRef.current as NodeJS.Timeout);
+      } else {
+        const contact = '9868366334';
+        const response = await sendSms(
+          contact,
+          `Help! POLICE! I am in an emergency situation. Call me immediately. My current location is https://google.com/maps/search/?api=1&query=${locationRef?.current?.latitude},${locationRef?.current?.longitude}`
+        );
+        console.log(response, contact, 'HELP POLICE');
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+      }
+    }, 40000);
+
+    smsIntervalRef.current = setTimeout(() => {
+      makePhoneCall('9868366334');
+    }, 45000);
   }
 
   function stopTimer() {

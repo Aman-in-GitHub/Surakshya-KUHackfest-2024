@@ -49,8 +49,6 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>Allow $(PRODUCT_NAME) to connect to bluetooth devices</string>
     <key>NSCameraUsageDescription</key>
     <string>$(PRODUCT_NAME) needs access to your Camera.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -68,11 +66,6 @@
     <key>NSUserActivityTypes</key>
     <array>
       <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
-    </array>
-    <key>UIBackgroundModes</key>
-    <array>
-      <string>bluetooth-central</string>
-      <string>bluetooth-peripheral</string>
     </array>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>

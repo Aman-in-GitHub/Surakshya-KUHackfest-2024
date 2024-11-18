@@ -12,7 +12,7 @@ const WARNING_ZONES = [
 ];
 const DANGER_ZONE_RANGE = 1.5;
 const WARNING_ZONE_RANGE = 0.8;
-const CONTACTS = ['9844676258'];
+const CONTACTS = ['0123456789'];
 
 export const CONSTANTS = {
   MAP_STYLE_URL,
